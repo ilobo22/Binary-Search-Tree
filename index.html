@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script src="p5.js"></script>
+  <script src="Node.js"></script>
+  <script src="Tree.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body >
+  <main style="justify-content: center; margin: 0; display: flex; align-items: center;">
+  </main>
+
+  <div style="justify-content: center; margin: 0; display: flex; align-items: center;" >
+    <button onclick="insert()">Insert</button>
+    <input id="insert" type="number">
+  </div>
+  <div style="justify-content: center; margin: 0; display: flex; align-items: center;" >
+    <button onclick="removeTheNode()"> Remove</button>
+    <input id="removeNode" type="number">
+  </div>
+  <div style="justify-content: center; margin: 0; display: flex; align-items: center;" >
+    <button onclick="searchNode()">Search</button>
+    <input id="search" type="number">
+  </div>
+  <div id="searchCon" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('searchCon').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p id="pID"></p>
+      </div>
+    </div>
+  </div>  
+  <div style="justify-content: center; margin: 0; display: flex; align-items: center;" >
+    <button onclick="inorder()">Inorder</button>
+    <button onclick="postorder()">Postorder</button>
+    <button onclick="preorder()"> Preorder</button>
+  </div>
+</body>
+
+</html>
